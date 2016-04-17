@@ -1,0 +1,23 @@
+{
+  "name": "ml-bitemporal-example",
+  "version": "0.0.1",
+  "description": "Example of using MarkLogic to track bitemporal data",
+  "main": "setup.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/wooldridge/ml-bitemporal-example.git"
+  },
+  "author": "Mike Wooldridge",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/wooldridge/ml-bitemporal-example/issues"
+  },
+  "homepage": "https://github.com/wooldridge/ml-bitemporal-example",
+  "dependencies": {
+    "marklogic": "^1.0.5",
+    "request-promise": "^3.0.0"
+  }
+}
