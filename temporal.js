@@ -1,6 +1,5 @@
 var config = require('./config'),
-    marklogic = require('marklogic'),
-    fs = require('fs');
+    marklogic = require('marklogic');
 
 var db = marklogic.createDatabaseClient({
   host: config.host,

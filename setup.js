@@ -1,6 +1,5 @@
 var config = require('./config'),
-    rp = require('request-promise'),
-    fs = require('fs');
+    rp = require('request-promise');
 
 function handleError(err) {
   if (err.error &&
