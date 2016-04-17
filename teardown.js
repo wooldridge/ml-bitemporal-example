@@ -11,26 +11,6 @@ function handleError(err) {
   }
 }
 
-function deleteREST() {
-  var options = {
-    method: 'DELETE',
-    uri: 'http://' + config.host + ':8002/v1/rest-apis/' + config.database.name + "-rest" +
-         '?include=content&include=modules',
-    json: true,
-    headers: {
-      'Content-Type': 'application/json'
-    },
-    auth: config.auth
-  };
-  rp(options)
-    .then(function (parsedBody) {
-      console.log('REST instance deleted: ' + config.database.name + "-rest");
-    })
-    .catch(function (err) {
-      handleError(err)
-    });
-}
-
 function clearSchemas() {
   var operation = {"operation": "clear-database"};
   var options = {
@@ -45,8 +25,28 @@ function clearSchemas() {
   };
   rp(options)
     .then(function (parsedBody) {
-      console.log('Schemas database cleared');
+      console.log('Database cleared: Schemas');
       deleteREST();
+    })
+    .catch(function (err) {
+      handleError(err)
+    });
+}
+
+function deleteREST() {
+  var options = {
+    method: 'DELETE',
+    uri: 'http://' + config.host + ':8002/v1/rest-apis/' + config.database.name + "-rest" +
+         '?include=content&include=modules',
+    json: true,
+    headers: {
+      'Content-Type': 'application/json'
+    },
+    auth: config.auth
+  };
+  rp(options)
+    .then(function (parsedBody) {
+      console.log('REST instance deleted: ' + config.database.name + "-rest");
     })
     .catch(function (err) {
       handleError(err)
