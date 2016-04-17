@@ -1,7 +1,5 @@
 var config = {};
 
-config.path = "/PATH/TO/PROJECT/ml-bitemporal-example/"; // include trailing "/"
-
 config.host = "localhost";
 
 config.database = {
