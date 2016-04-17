@@ -1,4 +1,4 @@
-<export><workspace name="ml-bitemporal-example"><query name="1. Alameda Jan-01" focus="true" listorder="5" taborder="1" active="true" database="" server="" mode="javascript">declareUpdate();
+<export><workspace name="ml-bitemporal-example"><query name="1.AlamedaJan-01" focus="true" listorder="5" taborder="1" active="true" database="" server="" mode="javascript">declareUpdate();
 
 var root = {
   "sysStart": null,
@@ -10,7 +10,7 @@ var root = {
 
 temporal.documentInsert("temporalCollection","person.json",root)
 // Insert at predefined system time
-temporal.statementSetSystemTime("2016-01-05T00:00:00Z")    </query><query name="2. Berkeley Jan-10" focus="false" listorder="6" taborder="2" active="true" database="12486440590099214247" server="8681707051413526719" mode="javascript">declareUpdate();
+temporal.statementSetSystemTime("2016-01-05T00:00:00Z")    </query><query name="2.BerkeleyJan-10" focus="false" listorder="6" taborder="2" active="true" database="12486440590099214247" server="8681707051413526719" mode="javascript">declareUpdate();
 
 var root = {
   "sysStart": null,
@@ -22,7 +22,7 @@ var root = {
 
 temporal.documentInsert("temporalCollection","person.json",root)
 // Insert at predefined system time
-temporal.statementSetSystemTime("2016-01-12T00:00:00Z")</query><query name="3. Berkeley Jan-08" focus="false" listorder="7" taborder="3" active="true" database="12486440590099214247" server="8681707051413526719" mode="javascript">declareUpdate();
+temporal.statementSetSystemTime("2016-01-12T00:00:00Z")</query><query name="3.BerkeleyJan-08" focus="false" listorder="7" taborder="3" active="true" database="12486440590099214247" server="8681707051413526719" mode="javascript">declareUpdate();
 
 var root = {
   "sysStart": null,
@@ -34,7 +34,7 @@ var root = {
 
 temporal.documentInsert("temporalCollection","person.json",root)
 // Insert at predefined system time
-temporal.statementSetSystemTime("2016-01-15T00:00:00Z")</query><query name="4. Delete" focus="false" listorder="8" taborder="4" active="true" database="17307863714832818413" server="8681707051413526719" mode="javascript">declareUpdate();
+temporal.statementSetSystemTime("2016-01-15T00:00:00Z")</query><query name="4.Delete" focus="false" listorder="8" taborder="4" active="true" database="17307863714832818413" server="8681707051413526719" mode="javascript">declareUpdate();
 
 temporal.documentDelete("temporalCollection","person.json")
 // Delete at predefined system time
