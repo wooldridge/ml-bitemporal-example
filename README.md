@@ -1,6 +1,8 @@
 # ml-bitemporal-example
 
-Bitemporal examples using the MarkLogic Node.js API and REST API.
+Bitemporal operations using the MarkLogic Node.js API and REST API. They are the same operations that are described in this blog post:
+
+https://developer.marklogic.com/blog/technical-keys-to-bitemp
 
 ## Requirements
 
